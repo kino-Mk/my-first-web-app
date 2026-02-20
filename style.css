@@ -111,3 +111,101 @@ ul {
 .home-message p {
   margin-bottom: 16px;
 }
+
+/* Unit Converter Styles */
+.converter-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  padding: 32px;
+  max-width: 480px;
+  margin: 32px auto; /* Center the card */
+  border: 1px solid #f0f0f0;
+}
+
+.converter-subtitle {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.converter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+.converter-label {
+  font-size: 0.875rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+.converter-input,
+.converter-from,
+.converter-to {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333333;
+  width: 100%; /* Ensure full width */
+}
+
+.converter-input:focus,
+.converter-from:focus,
+.converter-to:focus {
+  outline: none;
+  border-color: #4f7cac;
+}
+
+.converter-result {
+  background-color: #f8fbff; /* Light blue background */
+  color: #4f7cac; /* Blue text */
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Sidebar Active State */
+.sidebar-menu-item.active,
+.sidebar-header a.active {
+  background-color: #e6f0fa; /* Light blue background for active item */
+  color: #4f7cac;
+  font-weight: 700;
+}
+
+.sidebar-menu-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #555555;
+  transition: background-color 0.2s;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #eeeeee;
+}
+
+.hidden {
+  display: none;
+}
